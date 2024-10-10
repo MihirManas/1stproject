@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/web development/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+</head>
+<body style="color: black;" id="background"">
+    <header>
+        <h1 id="headertext">Pet Adoptation Form</h1>
+    </header>
+    <section>
+        <form action="/summit" method="get" target="_self" id="insideform">
+            <div class="background">
+                 <fieldset>
+                    <legend><b>Sign-up</b></legend>
+                    <label for="firstname" required>First Name :</label>
+                    <input type="text" id="FirstName" placeholder="Enter Your First Name">
+                    <label for="lastname">Last Name :</label>
+                    <input type="text" name="Last Name" id="lastname" placeholder="Enter your last name"> <br><br>
+                    <label for="email"> Enter Your email id here :</label>
+                    <input type="email" id="email" name="email" placeholder="enter your email" required> <br><br>
+                    <label for="password">Create a passsword :</label>
+                    <input type="password" name="passsword" id="password" required> <br><br>
+                    <label for="confirm_password">confirm password :</label>
+                    <input type="password" name="password" id="confirm_password" required> <br><br>
+                    <label for="address">Enter your full address here :</label><br>
+                    <textarea name="address" id="address" placeholder="Enter your full address here"></textarea> <br><br>
+                    <label for="phoneNum">WhatsApp Number :</label>
+                    <input type="tel" name="phoneNum" id="phoneNum" pattern="[0-9]{10}" placeholder="Enter your whatsapp number"> <br><br>
+                    <label for="dob">Enter your date of birth</label>
+                    <input type="date" name="dob" id="dob"> <br><br>
+                    <label for="nationality">Which is your nationality?</label>
+                    <select name="nationality" id="nationality" required>
+                        <option value="select" selected disabled>Select Citizenship</option>
+                        <option value="Indian">Indian</option>
+                        <option value="American">American</option>
+                        <option value="Canadian">Canadian</option>
+                        <option value="European">European</option>
+                        <option value="African">African</option>
+                        <option value="Australian">Australian</option>
+                        <option value="Non-pakistani,chineese">Non-Pakistani, Chinese Asian</option>
+                    </select><br><br>
+                    <label for="Gender" class="Gender">Gender :</label>
+                    <input type="radio" name="Gender" id="male" value="Male" required>
+                    <label for="male" class="Gender">Male</label>
+                    <input type="radio" name="Gender" id="female" value="feMale" required>
+                    <label for="female" class="Gender">female</label>
+                    <input type="radio" name="Gender" id="LGBTQ" value="LGBTQ" required>
+                    <label for="LGBTQ" class="Gender">LGBTQ</label><br><br>
+                    <label for="Subjects">Your 12th Subjects :</label>
+                    <input type="checkbox" name="Subjects" id="Physics">
+                    <label for="Physics">Physics</label>
+                    <input type="checkbox" name="Subjects" id="Chemistry">
+                    <label for="Chemistry">Chemistry</label>
+                    <input type="checkbox" name="Math" id="Math">
+                    <label for="Math">Math</label>
+                    <input type="checkbox" name="Subjects" id="Biology">
+                    <label for="Biology">Biology</label><br><br>
+                    <label for="age">Age :</label>
+                    <input type="range" name="age" id="age" min="18" max="30" step="1"><br><br>
+                    <LABEL for="audIO">Upload your passport size photo :</LABEL>
+                    <input type="file" name="Yourvoice" id="audIO"> <br><br>
+                    <button type="submit">summit</button>
+                    <button type="reset">reset</button>
+                </fieldset> 
+            </div>
+        </form>
+        <footer>
+                <h3>Thank You</h3>
+        </footer>
+</body>
+</html>
